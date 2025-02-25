@@ -4,61 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Sylas - Professional Content Writer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .contact {
-            margin-top: 20px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Eric Sylas - Professional Content Writer</h1>
-        <p>Expert in SEO-optimized blog writing, article creation, and compelling copywriting. Delivering high-quality content with fast turnaround times.</p>
-        
-        <h2>My Services</h2>
-        <p>✔ Blog Writing | ✔ Article Writing | ✔ Website Copy | ✔ Product Descriptions</p>
-        
-        <h2>Portfolio</h2>
-        <p>Check out my sample work upon request!</p>
-        
-        <div class="contact">
-            <h2>Contact Me</h2>
-            <p>Email: eric.sylas.writer@protonmail.com</p>
-            <a href="#" class="btn">Hire Me on Fiverr</a>
+    <header>
+        <div class="container">
+            <h1>Eric Sylas - Professional Content Writer</h1>
+            <p>Expert in SEO-optimized blog writing, article creation, and compelling copywriting.</p>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
         </div>
-    </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section id="services">
+            <h2>My Services</h2>
+            <ul>
+                <li>✔ Blog Writing</li>
+                <li>✔ Article Writing</li>
+                <li>✔ Website Copy</li>
+                <li>✔ Product Descriptions</li>
+                <li>✔ SEO Optimization</li>
+                <li>✔ Technical Writing</li>
+                <li>✔ Editing & Proofreading</li>
+                <li>✔ Ghostwriting</li>
+            </ul>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>Sample 1</h3>
+                    <p>SEO-optimized article on digital marketing trends.</p>
+                    <a href="#">View Sample</a>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Sample 2</h3>
+                    <p>Compelling product description for an e-commerce website.</p>
+                    <a href="#">View Sample</a>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Sample 3</h3>
+                    <p>Well-researched blog on AI in content creation.</p>
+                    <a href="#">View Sample</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonials">
+            <h2>What My Clients Say</h2>
+            <blockquote>
+                <p>"Eric’s writing boosted our blog traffic by 50%! Highly recommended." - Client A</p>
+            </blockquote>
+            <blockquote>
+                <p>"Delivered top-notch SEO content on time. Will hire again!" - Client B</p>
+            </blockquote>
+        </section>
+        
+        <section id="blog">
+            <h2>Latest Blog Posts</h2>
+            <article>
+                <h3>How to Write Engaging Content</h3>
+                <p>Tips and tricks for creating compelling and SEO-friendly content.</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>The Future of AI in Writing</h3>
+                <p>Exploring how AI is shaping the content industry.</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+        
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What services do you offer?</summary>
+                <p>I specialize in blog writing, SEO content, website copy, and more.</p>
+            </details>
+            <details>
+                <summary>How fast can you deliver content?</summary>
+                <p>Turnaround time varies, but most projects are delivered within 48 hours.</p>
+            </details>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Eric Sylas. All rights reserved.</p>
+    </footer>
 </body>
 </html>
